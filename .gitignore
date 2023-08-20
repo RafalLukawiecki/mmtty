@@ -15,3 +15,11 @@
 # C++Builder generated files
 mmtty.exe
 Debug_Build/*
+Release_Build/*
+
+# Linker artefacts
+*.ils
+*.ild
+*.ilc
+*.ilf
+*.ilr

@@ -5,7 +5,7 @@
         <MainSource>mmtty.cpp</MainSource>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Release</Config>
-        <ProjectVersion>19.2</ProjectVersion>
+        <ProjectVersion>19.5</ProjectVersion>
         <AppType>Application</AppType>
         <FrameworkType>VCL</FrameworkType>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
@@ -73,7 +73,7 @@
         <BCC_IncludePath>$(BDS)\include;$(BCC_IncludePath)</BCC_IncludePath>
         <TASM_IncludePath>$(BDS)\include;$(BDS)\include\vcl;$(TASM_IncludePath)</TASM_IncludePath>
         <FinalOutputDir>.</FinalOutputDir>
-        <AllPackageLibs>rtl.lib;vcl.lib;vclx.lib;dbrtl.lib;vcldb.lib;vcldbx.lib</AllPackageLibs>
+        <AllPackageLibs>rtl.lib;vcl.lib;vclx.lib;dbrtl.lib;vcldb.lib</AllPackageLibs>
         <TASM_Debugging>None</TASM_Debugging>
         <TASM_AdditionalSwitches> /w2</TASM_AdditionalSwitches>
         <DCC_AdditionalSwitches> -M</DCC_AdditionalSwitches>
@@ -156,7 +156,7 @@
         <BCC_Defines>NDEBUG;$(BCC_Defines);$(BCC_Defines)</BCC_Defines>
         <BCC_UserSuppliedOptions> -tWM -Vx -d -Ve -r</BCC_UserSuppliedOptions>
         <BT_BuildType>Debug</BT_BuildType>
-        <LinkPackageStatics>rtl.lib;vcl.lib;vclx.lib;dbrtl.lib;vcldb.lib;vcldbx.lib</LinkPackageStatics>
+        <LinkPackageStatics>rtl.lib;vcl.lib;vclx.lib;dbrtl.lib;vcldb.lib</LinkPackageStatics>
         <BCC_wpar>false</BCC_wpar>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
     </PropertyGroup>
@@ -429,15 +429,15 @@
         <FormResources Include="Main.dfm"/>
         <FormResources Include="FreqDisp.dfm"/>
         <FormResources Include="InputWin.dfm"/>
-        <BuildConfiguration Include="Release">
-            <Key>Cfg_2</Key>
-            <CfgParent>Base</CfgParent>
-        </BuildConfiguration>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
         <BuildConfiguration Include="Debug">
             <Key>Cfg_1</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Release">
+            <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
         </BuildConfiguration>
     </ItemGroup>
