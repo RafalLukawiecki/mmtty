@@ -32,7 +32,7 @@
 #include <SHELLAPI.H>
 								//AA6YQ  1.65D->1.66G,  JE3HHT 1.67
 #define	VERID	"Ver1.70"       //K6TU   1.68A -> 1.70A Hide FlexRadio Reserved and IQ Audio Devices
-#define	VERBETA	"L"             //JA7UDE 1.70A -> 1.70B G3WYW FT-991 CAT support
+#define	VERBETA	"M"             //JA7UDE 1.70A -> 1.70B G3WYW FT-991 CAT support
 								//AA6YQ  1.70C          added COM16-32 to PTT/FSK port selector and Radio port selector, added 991 to Yaesu Group selector entry
 								//AA6YQ  1.70D          prevent shift > 4000 Hz so CSlideFFT::Create does not divide by zero
 								//AA6YQ  1.70E          limit PTT/FSK port selector and Radio port selector to display only 8 items
@@ -47,6 +47,7 @@
 								//AA6YQ  1.70J          update documentation and URLs
 								//AA6YQ  1.70K			limit Help menu to one arrangement, increase height of VerDSP dialog, add "Setup always on top" option
 								//JA7UDE 1.70L			display the profile name in use
+								//EI6LA  1.70M          recompile and update for Embarcadero 11, attempting to fix premature PTT drop issues
 #define	VERTTL2	"MMTTY "VERID VERBETA
 #define	VERTTL  VERTTL2" Licensed under LGPL"       //1.70J
 

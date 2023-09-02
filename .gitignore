@@ -16,6 +16,8 @@
 mmtty.exe
 Debug_Build/*
 Release_Build/*
+__history/*
+__recovery/*
 
 # Linker artefacts
 *.ils

@@ -37,6 +37,7 @@
 #include <ComCtrls.hpp>
 #include <Menus.hpp>
 #include <Dialogs.hpp>
+#include <Vcl.ToolWin.hpp>
 #include <string>
 #include <queue>
 //---------------------------------------------------------------------------
@@ -399,6 +400,8 @@ __published:	// IDE 管理のコンポーネント
 	TComboBox *DemoBox1;
 	TMenuItem *KTX;
 	TMenuItem *N25;
+	TStatusBar *StatusBar1;
+	TToolBar *ToolBar1;
 	void __fastcall FormCloseQuery(TObject *Sender, bool &CanClose);
 	
 	void __fastcall PBoxFFTINPaint(TObject *Sender);
